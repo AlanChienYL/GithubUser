@@ -9,4 +9,9 @@ object Versions {
         const val appCompat = "1.2.0"
         const val material = "1.2.1"
     }
+
+    object Test{
+        const val junit = "1.1.2"
+        const val espresso = "3.3.0"
+    }
 }

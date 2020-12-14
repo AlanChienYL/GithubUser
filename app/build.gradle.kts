@@ -1,11 +1,11 @@
 plugins {
     id("com.android.application")
     id("kotlin-android")
+    kotlin("kapt")
 }
 
 android {
     compileSdkVersion(Versions.Android.compileSdkVersion)
-
     defaultConfig {
         applicationId = "com.alan.githubuser"
         minSdkVersion(Versions.Android.minSdkVersion)
@@ -15,7 +15,6 @@ android {
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
-
     buildTypes {
         getByName(BuildTypes.Release.name) {
             isMinifyEnabled = false
@@ -32,6 +31,9 @@ android {
     kotlinOptions {
         jvmTarget = "1.8"
     }
+    buildFeatures {
+        dataBinding = true
+    }
 }
 
 dependencies {
@@ -41,6 +43,6 @@ dependencies {
     implementation("androidx.appcompat:appcompat:${Versions.Android.appCompat}")
     implementation("com.google.android.material:material:${Versions.Android.material}")
 
-    androidTestImplementation("androidx.test.ext:junit:1.1.2")
-    androidTestImplementation("androidx.test.espresso:espresso-core:3.3.0")
+    androidTestImplementation("androidx.test.ext:junit:${Versions.Test.junit}")
+    androidTestImplementation("androidx.test.espresso:espresso-core:${Versions.Test.espresso}")
 }
