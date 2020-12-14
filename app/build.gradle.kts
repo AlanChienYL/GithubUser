@@ -4,12 +4,12 @@ plugins {
 }
 
 android {
-    compileSdkVersion(30)
+    compileSdkVersion(Versions.Android.compileSdkVersion)
 
     defaultConfig {
         applicationId = "com.alan.githubuser"
-        minSdkVersion(23)
-        targetSdkVersion(30)
+        minSdkVersion(Versions.Android.minSdkVersion)
+        targetSdkVersion(Versions.Android.targetSdkVersion)
         versionCode = 1
         versionName = "1.0"
 
@@ -17,7 +17,7 @@ android {
     }
 
     buildTypes {
-        getByName("release") {
+        getByName(BuildTypes.Release.name) {
             isMinifyEnabled = false
             proguardFiles(
                 getDefaultProguardFile("proguard-android-optimize.txt"),
@@ -36,10 +36,11 @@ android {
 
 dependencies {
 
-    implementation("org.jetbrains.kotlin:kotlin-stdlib:1.4.21")
-    implementation("androidx.core:core-ktx:1.3.2")
-    implementation("androidx.appcompat:appcompat:1.2.0")
-    implementation("com.google.android.material:material:1.2.1")
+    implementation("org.jetbrains.kotlin:kotlin-stdlib:${Versions.kotlin}")
+    implementation("androidx.core:core-ktx:${Versions.Android.coreKtx}")
+    implementation("androidx.appcompat:appcompat:${Versions.Android.appCompat}")
+    implementation("com.google.android.material:material:${Versions.Android.material}")
+
     androidTestImplementation("androidx.test.ext:junit:1.1.2")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.3.0")
 }
