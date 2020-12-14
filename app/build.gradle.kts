@@ -42,6 +42,7 @@ dependencies {
     implementation("androidx.core:core-ktx:${Versions.Android.coreKtx}")
     implementation("androidx.appcompat:appcompat:${Versions.Android.appCompat}")
     implementation("com.google.android.material:material:${Versions.Android.material}")
+    implementation("androidx.constraintlayout:constraintlayout:${Versions.Android.constraintLayout}")
 
     androidTestImplementation("androidx.test.ext:junit:${Versions.Test.junit}")
     androidTestImplementation("androidx.test.espresso:espresso-core:${Versions.Test.espresso}")

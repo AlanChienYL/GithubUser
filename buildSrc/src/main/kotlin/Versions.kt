@@ -8,6 +8,7 @@ object Versions {
         const val coreKtx = "1.3.2"
         const val appCompat = "1.2.0"
         const val material = "1.2.1"
+        const val constraintLayout = "2.0.4"
     }
 
     object Test{
