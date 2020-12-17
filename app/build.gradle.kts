@@ -1,5 +1,6 @@
 plugins {
     id("com.android.application")
+    id("dagger.hilt.android.plugin")
     kotlin("android")
     kotlin("kapt")
 }
@@ -43,6 +44,8 @@ dependencies {
     implementation("androidx.appcompat:appcompat:${Versions.Android.appCompat}")
     implementation("com.google.android.material:material:${Versions.Android.material}")
     implementation("androidx.constraintlayout:constraintlayout:${Versions.Android.constraintLayout}")
+    implementation("com.google.dagger:hilt-android:${Versions.Android.hilt}")
+    kapt ("com.google.dagger:hilt-android-compiler:${Versions.Android.hilt}")
 
     androidTestImplementation("androidx.test.ext:junit:${Versions.Test.junit}")
     androidTestImplementation("androidx.test.espresso:espresso-core:${Versions.Test.espresso}")

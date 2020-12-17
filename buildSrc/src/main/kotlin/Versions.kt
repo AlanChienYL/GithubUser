@@ -10,6 +10,7 @@ object Versions {
         const val appCompat = "1.2.0"
         const val material = "1.2.1"
         const val constraintLayout = "2.0.4"
+        const val hilt = "2.28-alpha"
     }
 
     object Test{
