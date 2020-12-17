@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.GitHubUser">
         <activity
-            android:name=".main.MainActivity"
+            android:name="com.alan.githubuser.ui.main.MainActivity"
             android:label="@string/title_activity_main">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
