@@ -1,5 +1,6 @@
 object Versions {
     const val kotlin = "1.4.21"
+    const val buildGradleTool = "4.1.1"
 
     object Android{
         const val compileSdkVersion = 30
