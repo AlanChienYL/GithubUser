@@ -4,10 +4,12 @@ import android.app.Application
 import android.os.StrictMode
 import android.os.StrictMode.ThreadPolicy
 import android.os.StrictMode.VmPolicy
+import dagger.hilt.android.HiltAndroidApp
 
 /**
  * Created by alan on 20,December,2020.
  */
+@HiltAndroidApp
 class GitHubApp : Application() {
 
     override fun onCreate() {
