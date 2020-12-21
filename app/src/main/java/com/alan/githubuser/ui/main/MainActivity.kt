@@ -5,7 +5,9 @@ import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.FragmentActivity
 import com.alan.githubuser.R
 import com.alan.githubuser.databinding.ActivityMainBinding
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class MainActivity : FragmentActivity() {
 
     lateinit var binding: ActivityMainBinding
